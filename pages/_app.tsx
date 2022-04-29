@@ -2,6 +2,7 @@ import { AppProps, NextWebVitalsMetric } from 'next/app'
 
 // Component imports
 import { Header, Footer } from '@layout'
+import { LazyMotion } from 'framer-motion'
 
 // Style imports
 import '../styles/tailwind.css'
@@ -11,13 +12,18 @@ import '../styles/tailwind.css'
 const SyncoreNextApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<>
-			<div className="flex flex-col min-h-screen">
-				<Header />
-				<main className="flex flex-col flex-1">
-					<Component {...pageProps} />
-				</main>
-				<Footer />
-			</div>
+			<LazyMotion
+				features={() =>
+					import('framer-motion').then((mod) => mod.domAnimation)
+				}>
+				<div className="flex flex-col min-h-screen text-white font-body bg-background">
+					<Header />
+					<main className="flex flex-col flex-1">
+						<Component {...pageProps} />
+					</main>
+					<Footer />
+				</div>
+			</LazyMotion>
 		</>
 	)
 }
