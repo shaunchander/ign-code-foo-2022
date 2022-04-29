@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	/* GLOBAL RESETS */
+
+	*,
+	*::after,
+	*::before {
+		@apply box-border p-0 m-0;
+	}
+
+	html {
+		@apply h-full;
+	}
+
+	body {
+		@apply h-full overflow-x-hidden overflow-y-auto overscroll-none;
+	}
+}
