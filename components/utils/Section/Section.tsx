@@ -29,7 +29,9 @@ export const Section = ({
 	return (
 		<section
 			id={id}
-			className={`${__dangerouslyOverridePadding ? '' : 'p-6'} ${className}`}>
+			className={`${
+				__dangerouslyOverridePadding ? '' : 'px-9 py-16'
+			} ${className}`}>
 			{children}
 		</section>
 	)
