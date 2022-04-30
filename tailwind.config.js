@@ -3,10 +3,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: '#fb3362',
-				secondary: '#800b2f',
-				dark: '#293045',
-				background: '#202735'
+				primary: '#00C999',
+				secondary: '#0FAC86',
+				dark: '#30353E',
+				background: '#0D141F'
 			},
 			screens: {
 				sm: '400px',

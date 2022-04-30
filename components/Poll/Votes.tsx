@@ -6,15 +6,12 @@ type Props = {
 	title: string
 	votes: number
 	totalVotes: number
-	emoji: string
 }
 
 export const Votes = (props: Props) => {
 	return (
 		<div>
-			<Text>
-				{props.emoji} &mdash; {props.title}
-			</Text>
+			<Text>{props.title}</Text>
 
 			{/* Progress bar w/vote percentage. */}
 			<div className="flex items-center space-x-2">

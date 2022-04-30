@@ -6,5 +6,7 @@
 	"bracketSpacing": true,
 	"jsxBracketSameLine": true,
 	"arrowParens": "always",
-	"proseWrap": "always"
+	"proseWrap": "always",
+	"printWidth": 120,
+	"tabWidth": 2
 }

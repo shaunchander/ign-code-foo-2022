@@ -10,7 +10,6 @@ type Props = {
 	options: {
 		title: string
 		votes: number
-		emoji: string
 	}[]
 	totalVotes: number
 	createdAt: string
@@ -43,7 +42,6 @@ export const Poll = (props: Props) => {
 						{props.options.map((option, i) => (
 							<Votes
 								key={i}
-								emoji={option.emoji}
 								title={option.title}
 								votes={option.votes}
 								totalVotes={props.totalVotes}
@@ -103,7 +101,7 @@ export const Poll = (props: Props) => {
 								scale: 0.85
 							}
 						}}
-						className="icon-btn">
+						className="icon-btn icon-btn-primary">
 						<EyeIcon className="w-6 h-6" />
 					</m.button>
 				</m.div>

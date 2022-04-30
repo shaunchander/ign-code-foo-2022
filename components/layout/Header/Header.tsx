@@ -1,10 +1,8 @@
 // Component imports
+import { Text } from '@utils'
 import { Container } from '@utils'
 import Link from 'next/link'
 import { PlusCircleIcon } from '@heroicons/react/outline'
-
-// Static imports
-import Logo from '@svg/logo.svg'
 
 /**
  * Renders the navbar.
@@ -18,8 +16,9 @@ export const Header = () => {
 					<div className="w-[100px] lg:w-[150px]">
 						<Link href="/">
 							<a className="block">
-								<Logo />
-								<span className="sr-only">IGN</span>
+								<Text tag="p" style="h3">
+									✨ Pollster
+								</Text>
 							</a>
 						</Link>
 					</div>
