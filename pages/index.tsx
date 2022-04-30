@@ -8,7 +8,7 @@ import { Poll } from '@component/Poll'
 const Home = () => {
 	return (
 		<>
-			<SEO title="IGN Polls | Home" path="/" />
+			<SEO title="Pollster | Home" path="/" />
 
 			<Section id="active-polls">
 				<Container className="space-y-6">
@@ -23,8 +23,8 @@ const Home = () => {
 							createdAt="1 hour ago"
 							title="Do you like Portal 2?"
 							options={[
-								{ title: 'Yes', emoji: '😄', votes: 100 },
-								{ title: 'No', emoji: '😡', votes: 100 }
+								{ title: 'Yes', votes: 100 },
+								{ title: 'No', votes: 100 }
 							]}
 							totalVotes={200}
 						/>
